@@ -1,0 +1,89 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.2.4",
+	"appid": "wxf96c64797c5a5a65",
+	"projectname": "%E5%91%98%E5%B7%A5%E4%BA%BA%E4%BA%8B%E8%B0%83%E5%8A%A8%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 7,
+			"list": [
+				{
+					"id": -1,
+					"name": "logon",
+					"pathName": "pages/logon/logon",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "home",
+					"pathName": "pages/home/home",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "searchPage",
+					"pathName": "pages/searchPage/searchPage",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "test",
+					"pathName": "pages/test/test",
+					"query": ""
+				},
+				{
+					"id": 4,
+					"name": "adminSearchPage",
+					"pathName": "pages/adminSearchPage/adminSearchPage",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "addUser",
+					"pathName": "pages/addUser/addUser",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "employeeMessage",
+					"pathName": "pages/employeeMessage/employeeMessage",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "userModifyPage",
+					"pathName": "pages/userModifyPage/userModifyPage",
+					"query": ""
+				}
+			]
+		}
+	}
+}

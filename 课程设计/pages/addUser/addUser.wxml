@@ -1,0 +1,56 @@
+<!--pages/addUser/addUser.wxml-->
+
+<view class='background'>
+  <view class='title'>
+    <text class='theTitle'>新建员工信息</text>
+  </view>
+  <form bindsubmit='formSubmit' bindreset='formReset'>
+    <view class='importantMessage'>
+      <view class='message'>
+        <text class='label'>ID</text>
+        <input name="employeeId" placeholder='请输入员工ID' placeholder-style='placeholderStyle'/>
+      </view>
+      <view class='line'></view>
+      <view class='message'>
+        <text class='label'>姓名</text>
+        <input name="employeeName" placeholder='请输入员工姓名' placeholder-style='placeholderStyle'/>
+      </view>
+      
+      <view class='line'></view>
+      <view class='message'>
+        <text class='label'>权限</text>
+        <input name="authority" placeholder='请输入员工权限' placeholder-style='placeholderStyle'/>
+      </view>
+      <view class='line'></view>
+      <view class='message'>
+        <text class='label'>登录密码</text>
+        <input name="password" placeholder='请输入初始密码' placeholder-style='placeholderStyle'/>
+      </view>
+    </view>
+    <view class='gap'></view>
+    <view class='otherMessage'>
+      <view class='message'>
+        <text class='label'>职介</text>
+        <input name="job" placeholder='请输入员工职介' placeholder-style='placeholderStyle'/>
+      </view>
+      <view class='line'></view>
+      <view class='message'>
+        <text class='label'>工作状态</text>
+        <input name="employeeState" placeholder='请输入员工工作状态' placeholder-style='placeholderStyle'/>
+      </view>
+      <view class='line'></view>
+      <view class='message'>
+        <text class='label'>入职时间</text>
+        <input name="joinTime" placeholder='请输入员工入职时间' placeholder-style='placeholderStyle'/>
+      </view>
+      <view class='line'></view>
+      <view class='message'>
+        <text class='label'>所在部门编号</text>
+        <input name="departmentId" placeholder='请输入员工所在部门编号' placeholder-style='placeholderStyle'/>
+      </view>
+    </view>
+    <button class='submitBtn' form-type="submit">提交</button>
+  </form>
+
+  
+</view>

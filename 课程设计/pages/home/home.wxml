@@ -1,0 +1,10 @@
+<!--pages/home/home.wxml-->
+
+<view class='background'>
+  <view class='choose'>
+    <button class='btn'>信息查询</button>
+    <button class='btn'>工作调动</button>
+    <button class='btn'>离退休处理</button>
+    <button class='btn'>系统维护</button>
+  </view>
+</view>

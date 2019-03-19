@@ -1,0 +1,54 @@
+<!--pages/adminSearchPage/adminSearchPage.wxml-->
+<view class='background'>
+  
+  <view class='searchBg'>
+    <view class='searchView' bindtap='searchButton'>
+      <view class='searchLabel'>搜索</view>
+    </view>
+  </view>
+
+  <scroll-view class='list' scroll-y = 'true'>
+    <block wx:for="{{list}}" wx:for-item="item" wx:key="index">
+      <view class='items' data-index='{{index}}' bindtap='toMessage' bindlongpress='deleteEmployee'>
+        <view class='itemContent' >
+          <text class='itemId'>{{item.employeeId}}</text>
+          <view class='name_job'>
+            <text class='itemName'>{{item.employeeName}}</text>
+            <text class='itemJob'>{{item.job}}</text>
+          </view>  
+        </view>
+      </view>
+    </block>
+  </scroll-view>
+<!-- 
+  
+  <view class='list' scroll-y = 'true'>
+    <block wx:for="{{list}}" wx:for-item="item" wx:key="index">
+      <view class='items' bindtap='clickItem' data-index='{{index}}' bindtap='toMessage' bindlongpress='deleteEmployee'>
+        <view class='itemContent' >
+          <text class='itemId'>{{item.employeeId}}</text>
+          <view class='name_job'>
+            <text class='itemName'>{{item.employeeName}}</text>
+            <text class='itemJob'>{{item.job}}</text>
+          </view>  
+        </view>
+      </view>
+    </block>
+  </view> -->
+
+  <!-- <view class='circle' bindtap='addUser'>
+    <view class='operator'>
+      +
+    </view>
+  </view> -->
+
+  <view class='add-button'>
+    <image class='addButton' src='/images/add_button.png' bindtap='addUser'></image>
+  </view>
+
+  <view class='tarBar'>
+    <view class='tarBarText' bindtap='toMobilize'>
+      <text>员工调动</text>
+    </view>
+  </view>
+</view>

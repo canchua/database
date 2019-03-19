@@ -1,0 +1,22 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/logon/logon",
+    "pages/home/home",
+    "pages/adminSearchPage/adminSearchPage",
+    "pages/userModifyPage/userModifyPage",
+    "pages/addUser/addUser",
+    "pages/employeeMessage/employeeMessage",
+    "pages/searchPage/searchPage",
+    "pages/adminMobilizePage/adminMobilizePage",
+    "pages/modifyPassword/modifyPassword",
+    "pages/modifyState/modifyState"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "员工人事调动管理系统",
+    "navigationBarTextStyle": "black"
+  }
+}

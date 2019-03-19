@@ -1,0 +1,31 @@
+<!--pages/logon/logon.wxml-->
+
+<view class="background">
+  <image class="icon" src='/images/logo.png'></image>
+  <form bindsubmit='formSubmit' bindreset='formReset'> 
+  <view class="logon">
+    <view class='logonRow'>
+      <view class='logonText'>
+        <view class='Name'>账号</view>
+        <view class='Num'>
+          <input name="userid" placeholder='请输入登录账号' placeholder-style='placeholderStyle'/>
+        </view>
+      </view>
+    </view>
+    <view class='division'></view>
+    <view class='logonRow'>
+      <view class='logonText'>
+        <view class='Name'>密码</view>
+        <view class='Num'>
+          <input name="password" placeholder='请输入登录密码' placeholder-style='placeholderStyle'/>
+        </view>
+      </view>
+    </view>
+    <view class='division'></view>
+    <view class='forget'>
+      <view class='forgetWord' bindtap='forgetPassword'>忘记密码</view>
+    </view>
+    <button class='btn' form-type="submit">登录</button>
+  </view>
+  </form>
+</view>

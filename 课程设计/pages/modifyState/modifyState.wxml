@@ -1,0 +1,16 @@
+<!--pages/modifyState/modifyState.wxml-->
+
+<view class='background'>
+ <view class='title'>
+    <text class='theTitle'>离退休办理</text>
+  </view>
+  <form bindsubmit='formSubmit' bindreset='formReset'>
+    <radio-group class="radio-group" bindchange="radioChange">
+    <label class="radio" wx:for="{{items}}">
+      <radio value="{{item.name}}" checked="{{item.checked}}" color='#6FA7FF' />
+        {{item.value}}
+      </label>
+    </radio-group>
+    <button class='submitBtn' form-type="submit">确认</button>
+  </form>
+</view>

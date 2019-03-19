@@ -1,0 +1,45 @@
+<!--pages/employeeMessage/employeeMessage.wxml-->
+
+<view class='background'>
+  <view class='title'>
+    <text class='theTitle'>员工信息</text>
+  </view>
+  <view class='importantMessage'>
+    <view class='message'>
+      <text class='label'>ID</text>
+      <text class='content'>{{item.employeeId}}</text>
+      <!-- <text class='content'>{{employeeId}}</text> -->
+    </view>
+    <view class='line'></view>
+    <view class='message'>
+      <text class='label'>姓名</text>
+      <text class='content'>{{item.employeeName}}</text>
+      <!-- <text class='content'>{{employeeName}}</text> -->
+    </view>
+  </view>
+  <view class='otherMessage'>
+    <view class='message'>
+      <text class='label'>职介</text>
+      <!-- <text class='content'>{{job}}</text> -->
+      <text class='content'>{{item.job}}</text>
+    </view>
+    <view class='line'></view>
+    <view class='message'>
+      <text class='label'>工作状态</text>
+      <!-- <text class='content'>{{employeeState}}</text> -->
+      <text class='content'>{{item.employeeState}}</text>
+    </view>
+    <view class='line'></view>
+    <view class='message'>
+      <text class='label'>入职时间</text>
+      <!-- <text class='content'>{{joinTime}}</text> -->
+      <text class='content'>{{item.joinTime}}</text>
+    </view>
+    <view class='line'></view>
+    <view class='message'>
+      <text class='label'>所在部门编号</text>
+      <text class='content'>{{item.departmentId}}</text>
+      <!-- <text class='content'>{{departmentId}}</text> -->
+    </view>
+  </view>
+</view>

@@ -1,0 +1,158 @@
+/* pages/adminSearchPage/adminSearchPage.wxss */
+
+.background{
+
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.searchBg{
+ /* position: fixed; */
+ width: 100%;
+ height: 50px;
+ background-color: #F5F5F5;
+ box-sizing: border-box;
+ padding: 8px 15px 8px 15px;
+}
+.searchView{
+ height: 100%;
+ background-color: white;
+ border-radius: 2px;
+ text-align: center;
+}
+
+.searchIcon{
+
+  width: 16px;
+  height: 16px;
+  margin-top: 9px;
+  display: inline-block;
+
+}
+.searchLabel{
+
+   width: 40px;
+   height: 100%;
+   display: inline-block;
+   font-size: 14px;
+   vertical-align: top;
+   line-height:34px;
+   font-style: PingFangSC;
+   color: #BBBBBB;
+}
+
+.list{
+  height: 500px;
+  overflow: hidden;
+  /* height: 100% - 100px; */
+  width: 100%;
+  /* display: flex;
+  justify-content: center; */
+}
+
+::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+    color: transparent;
+}
+
+.items{
+  height: 50px;
+  width: 92%;
+  margin-left: 4%;
+  /* margin: auto; */
+  margin-top: 10px;
+  background-color: #6FA7FF;
+  color: white;
+  border-radius: 5px;
+  /* align-items: center; */
+}
+
+.itemContent{
+  margin-left: 5%;
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.itemId{
+
+}
+
+.name_job{
+  margin-left: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.itemName{
+
+}
+
+.itemJob{
+  font-size: small;
+}
+
+.circle{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  height: 60px;
+  width: 60px;
+  right: 5px;
+  bottom: 60px;
+  opacity: 0.9;
+  background-color: #0FDFEB;
+  border-radius: 50%;
+}
+
+.operator{
+  /* height: 20px;
+  width: 20px; */
+  font-size: xx-large;
+  color: white;
+}
+
+.plus{
+  padding: auto;
+  font-size: xx-large;
+  color: white;
+}
+
+.add-button{
+  position: fixed;
+  height: 60px;
+  width: 60px;
+  right: 5px;
+  bottom: 60px;
+}
+
+.addButton{
+  height: 100%;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.tarBar{
+  height: 100%-550px;
+  /* bottom: 0px; */
+  /* position: fixed; */
+  /* height: 50px; */
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: #4E97F7;
+}
+
+.tarBarText{
+  margin-top: 10px;
+}

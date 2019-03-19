@@ -1,0 +1,92 @@
+/* pages/userModifyPage/userModifyPage.wxss */
+
+
+.background{
+  height: 100%;
+  background: white;
+}
+
+.title{
+  height: 50px;
+  background: #6FA7FF;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.theTitle{
+
+}
+
+.importantMessage{
+  margin-top: 0px;
+  background: white;
+  height: 111px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.otherMessage{
+  margin-top: 7px;
+  background: white;
+  height: 210px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.gap{
+  height: 5px;
+  background: #F5F5F5;
+}
+
+.line{
+  height: 1px;
+  width: 100%;
+  background: #979797;
+}
+
+.message{
+  height: 20px;
+  margin-left: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.label{
+  color: #979797;
+}
+
+.content{
+  margin-right: 50px;
+}
+
+.buttonBlock{
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button{
+  width: 70%;
+  margin-top: 30px;
+  background-color: #6FA7FF;
+  color: #fff; 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  height: 40px;
+}
+
+.buttonWord{
+
+}
