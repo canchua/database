@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.database.weixin.dao.TransferDao">
+    <insert id="insertTransfer" parameterType="com.database.weixin.entity.Transfer">
+        insert into
+        tb_transfer(employee_id, trans_date, in_department, out_department, reason)
+        values
+        (#{employeeId}, #{transDate}, #{inDepartment}, #{outDepartment}, #{reason})
+    </insert>
+</mapper>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.database.weixin.dao.EmployeeDao">
+    <select id="queryEmployee" resultType="com.database.weixin.entity.Employee">
+        select employee_id, employee_name, employee_state, join_time, job, department_id
+        from tb_employee
+    </select>
+    <select id="queryEmployeeById" resultType="com.database.weixin.entity.Employee">
+        select employee_id, employee_name, employee_state, join_time, job, department_id
+        from tb_employee
+        where
+        employee_id=#{employeeId}
+    </select>
+    <insert id="insertEmployee" useGeneratedKeys="true" keyProperty="EmployeeId"
+            keyColumn="employee_id" parameterType="com.database.weixin.entity.Employee">
+        insert into
+        tb_employee(employee_id, employee_name, employee_state, join_time, job, department_id)
+        values
+        (#{employeeId}, #{employeeName}, #{employeeState}, #{joinTime}, #{job}, #{departmentId})
+    </insert>
+    <update id="transferEmployee" parameterType="com.database.weixin.entity.Employee">
+      update tb_employee
+      <set>
+          <if test="departmentId!=null">=#{departmentId}</if>
+
+      </set>
+      where employee_id=#{employeeId}
+
+    </update>
+    <update id="updateEmployee" parameterType="com.database.weixin.entity.Employee">
+        update tb_employee
+        <set>
+            <if test="employeeState!=null">=#{employeeState}</if>
+
+        </set>
+        where employee_id=#{employeeId}
+
+    </update>
+    <delete id="deleteEmployee">
+        delete from
+        tb_employee
+        where
+        employee_id = #{employeeId}
+    </delete>
+</mapper>

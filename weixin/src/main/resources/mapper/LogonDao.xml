@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.database.weixin.dao.LogonDao">
+    <select id="login" resultType="int">
+        select authority
+        from logon_message
+        where
+        employee_id=#{employeeId} and password=#{password}
+    </select>
+    <insert id="insertLogon" useGeneratedKeys="true" keyProperty="EmployeeId" keyColumn="employee_id" parameterType="com.database.weixin.entity.Logon">
+        insert into
+        logon_message(employee_id, password, authority)
+        values
+        (#{employeeId}, #{password}, #{authority})
+    </insert>
+    <delete id="deleteLogon">
+        delete from
+        logon_message
+        where
+        employee_id = #{employeeId}
+    </delete>
+</mapper>
